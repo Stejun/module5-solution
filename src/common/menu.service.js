@@ -27,7 +27,7 @@ function MenuService($http, ApiPath) {
   };
 
   service.checkNewsletter = function (short_name) {
-    return $http.get("http://stejun-module5.herokuapp.com/menu_items/"+short_name+".json");
+    return $http.get("https://stejun-module5.herokuapp.com/menu_items/"+short_name+".json");
   };
 }
 })();
