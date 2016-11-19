@@ -1,0 +1,38 @@
+<div ng-if="!infoCtrl.info.empty" class="col-lg-8 col-lg-offset-2">
+      <div class="form-group">
+        <label>First name:</label>
+        <span>{{infoCtrl.info.firstName}}</span>
+      </div>
+      <div class="form-group">
+        <label>Last name:</label>
+        <span>{{infoCtrl.info.lastName}}</span>
+      </div>
+      <div class="form-group">
+        <label>Email address:</label>
+        <span>{{infoCtrl.info.email}}</span>
+      </div>
+      <div class="form-group">
+        <label>Phone number:</label>
+        <span>{{infoCtrl.info.phone}}</span>
+      </div>
+      <div class="form-group">
+        <label>Menu number:</label>
+        <span>{{infoCtrl.info.menuNumber}}</span>
+      </div>
+      <div class="form-group">
+        <label>Menu name:</label>
+        <span>{{infoCtrl.info.meal.name}}</span>
+      </div>
+      <div class="form-group">
+        <label>Menu description:</label>
+        <span>{{infoCtrl.info.meal.description}}</span>
+      </div>
+      <div class="form-group">
+        <img ng-src="images/menu/{{infoCtrl.info.meal.category_short_name}}/{{infoCtrl.info.meal.category_short_name}}.jpg"/>
+      </div>
+</div>
+<div ng-if="infoCtrl.info.empty" class="col-lg-8 col-lg-offset-2 text-center">
+	<h2>Not Signed Up Yet.</h2>
+<a class="btn btn-info center-block" ui-sref='newsletter'>Sign up Now!</a>
+</div>
+<div class="clearfix"></div>
